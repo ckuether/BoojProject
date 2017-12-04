@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <LinearLayout
+        android:id="@+id/realtor_item_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/realtor_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:paddingTop="20dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/realtor_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            android:paddingBottom="25dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/realtor_item_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/realtor_item_header"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/realtor_item_header"
+        android:layout_toRightOf="@+id/realtor_item_photo">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/realtor_item_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/realtor_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
